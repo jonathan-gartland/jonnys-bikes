@@ -102,15 +102,15 @@ export default function Home() {
   return (
     <div>
       <div className="mx-4">
-        <div className="responsive mt-4 h-64 w-full rounded-2xl pt-4">
+        <div className="responsive mt-1 h-64 w-full rounded-2xl pt-2">
           <Image
             className="h-64 w-full rounded-2xl object-cover object-center filter"
-            src="/jonnys-bikes/p6pb24703805.jpg"
+            src="/p6pb24703805.jpg"
             alt="Gary Fisher Hoo Koo e Koo 1998"
             width={700}
             height={256}
           />
-          <h1 className="px-26 absolute left-[120px] top-4 text-[196px] text-blue-100">
+          <h1 className="px-26 absolute left-[120px] -top-2 text-[196px] text-blue-100 ">
             Jonny&#39;s Bikes
           </h1>
         </div>
@@ -125,10 +125,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="responsive mt-4 h-64 w-full rounded-2xl pt-4">
+        <div className="responsive mt-4 h-64 w-full rounded-2xl pt-1">
           <Image
             className="h-64 w-full rounded-2xl object-cover object-center"
-            src="/jonnys-bikes/GTTimberlineFS1996.jpg"
+            src="/GTTimberlineFS1996.jpg"
             alt="GT Timberline FS 1996"
             width={700}
             height={475}
@@ -136,18 +136,18 @@ export default function Home() {
         </div>
       </div>
       <About isLoading={isLoading} />
-      <div>
+      <div className="mt-4 mx-8 mb-4">
         <Image
-          className="h-64 w-full rounded-lg object-cover object-center"
-          src="/jonnys-bikes/2022-Santa-Cruz-Chameleon-Review_12.jpg"
+          className="h-64 w-full rounded-2xl object-cover object-center"
+          src="/2022-Santa-Cruz-Chameleon-Review_12.jpg"
           alt="Santa Cruz Chameleon 2022"
           width={700}
           height={475}
         />
       </div>
-      <div className="col component-width relative mt-10 justify-center space-y-5 rounded-xl border-2 border-gray-500 bg-blue-100">
-        <div className="mx-48 mb-8 mt-4 mt-8 pb-4 text-4xl">
-          Some mildly interesting ECharts breakdowns of the collection
+      <div className="col component-width relative mt-4 mx-2 justify-center space-y-5 rounded-xl border-2 border-gray-500 bg-blue-100">
+        <div className="mx-48 mb-8 mt-4 pb-4 text-4xl">
+          Some mildly interesting ECharts of the collection
         </div>
         <div className="col mx-36">
           <div className="row space-x-60">
@@ -193,13 +193,15 @@ export default function Home() {
         <div className="justify-center">
           <JonnyBike />
         </div>
-        <Image
-          className="h-64 w-full rounded-2xl object-cover object-center"
-          src="/jonnys-bikes/ac6150e5-b610-4d3d-86af-1af027005b52.png"
-          alt="GT Grade 2018"
-          width={700}
-          height={475}
-        />
+        <div className="mx-8">
+          <Image
+            className="h-64 w-full rounded-2xl object-cover object-center"
+            src="/ac6150e5-b610-4d3d-86af-1af027005b52.png"
+            alt="GT Grade 2018"
+            width={700}
+            height={475}
+          />
+        </div>
       </div>
     </div>
   );
