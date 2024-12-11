@@ -32,6 +32,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/types": "^19.5.0",
     "@eslint/js": "^9.16.0",
     "@jest/globals": "^29.7.0",
     "@testing-library/dom": "^10.4.0",
@@ -43,6 +44,7 @@
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
+    "conventional-changelog-atom": "^5.0.0",
     "eslint": "^8.57.1",
     "eslint-config-next": "15.0.4",
     "eslint-config-prettier": "^9.1.0",
