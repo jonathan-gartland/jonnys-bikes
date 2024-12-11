@@ -105,7 +105,7 @@ export default function Home() {
         <div className="responsive mt-1 h-64 w-full rounded-2xl pt-2">
           <Image
             className="h-64 w-full rounded-2xl object-cover object-center"
-            src="/p6pb24703805.jpg"
+            src="/jonnys-bikes/p6pb24703805.jpg"
             alt="Gary Fisher Hoo Koo e Koo 1998"
             width={700}
             height={256}
@@ -129,7 +129,7 @@ export default function Home() {
         <div className="responsive mt-4 h-64 w-full rounded-2xl pt-1">
           <Image
             className="h-64 w-full rounded-2xl object-cover object-center"
-            src="/GTTimberlineFS1996.jpg"
+            src="/jonnys-bikes/GTTimberlineFS1996.jpg"
             alt="GT Timberline FS 1996"
             width={700}
             height={475}
@@ -140,7 +140,7 @@ export default function Home() {
       <div className="mt-4 mx-8 mb-4">
         <Image
           className="h-64 w-full rounded-2xl object-cover object-center"
-          src="/2022-Santa-Cruz-Chameleon-Review_12.jpg"
+          src="/jonnys-bikes/2022-Santa-Cruz-Chameleon-Review_12.jpg"
           alt="Santa Cruz Chameleon 2022"
           width={700}
           height={475}
@@ -197,7 +197,7 @@ export default function Home() {
         <div className="mx-8">
           <Image
             className="h-64 w-full rounded-2xl object-cover object-center"
-            src="/ac6150e5-b610-4d3d-86af-1af027005b52.png"
+            src="/jonnys-bikes/ac6150e5-b610-4d3d-86af-1af027005b52.png"
             alt="GT Grade 2018"
             width={700}
             height={475}
