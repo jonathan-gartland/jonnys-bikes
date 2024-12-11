@@ -11,6 +11,9 @@ importers:
       echarts:
         specifier: ^5.5.1
         version: 5.5.1
+      echarts-for-react:
+        specifier: ^3.0.2
+        version: 3.0.2(echarts@5.5.1)(react@19.0.0)
       next:
         specifier: 15.0.4
         version: 15.0.4(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -1376,6 +1379,12 @@ packages:
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+
+  echarts-for-react@3.0.2:
+    resolution: {integrity: sha512-DRwIiTzx8JfwPOVgGttDytBqdp5VzCSyMRIxubgU/g2n9y3VLUmF2FK7Icmg/sNVkv4+rktmrLN9w22U2yy3fA==}
+    peerDependencies:
+      echarts: ^3.0.0 || ^4.0.0 || ^5.0.0
+      react: ^15.0.0 || >=16.0.0
 
   echarts@5.5.1:
     resolution: {integrity: sha512-Fce8upazaAXUVUVsjgV6mBnGuqgO+JNDlcgF79Dksy4+wgGpQB2lmYoO4TSweFg/mZITdpGHomw/cNBJZj1icA==}
@@ -2912,6 +2921,9 @@ packages:
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
+
+  size-sensor@1.0.2:
+    resolution: {integrity: sha512-2NCmWxY7A9pYKGXNBfteo4hy14gWu47rg5692peVMst6lQLPKrVjhY+UTEsPI5ceFRJSl3gVgMYaUi/hKuaiKw==}
 
   slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
@@ -4811,6 +4823,13 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
+  echarts-for-react@3.0.2(echarts@5.5.1)(react@19.0.0):
+    dependencies:
+      echarts: 5.5.1
+      fast-deep-equal: 3.1.3
+      react: 19.0.0
+      size-sensor: 1.0.2
+
   echarts@5.5.1:
     dependencies:
       tslib: 2.3.0
@@ -4958,8 +4977,8 @@ snapshots:
       '@typescript-eslint/parser': 8.18.0(eslint@8.57.1)(typescript@5.7.2)
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.57.1)
       eslint-plugin-react: 7.37.2(eslint@8.57.1)
       eslint-plugin-react-hooks: 5.1.0(eslint@8.57.1)
@@ -4982,7 +5001,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1):
+  eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
       debug: 4.4.0
@@ -4994,22 +5013,22 @@ snapshots:
       is-glob: 4.0.3
       stable-hash: 0.0.4
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
       '@typescript-eslint/parser': 8.18.0(eslint@8.57.1)(typescript@5.7.2)
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0)(eslint@8.57.1)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
@@ -5020,7 +5039,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -6688,6 +6707,8 @@ snapshots:
     optional: true
 
   sisteransi@1.0.5: {}
+
+  size-sensor@1.0.2: {}
 
   slash@3.0.0: {}
 
