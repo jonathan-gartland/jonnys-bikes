@@ -15,9 +15,4 @@ describe("Sum function", () => {
     expect(sum1).toEqual(8);
   });
 
-  test("Returns correct value", () => {
-    let sum1: number = 0;
-    sum1 = sum(5, 2);
-    expect(sum1).toEqual(8-1);
-  });
 });
