@@ -104,11 +104,12 @@ export default function Home() {
       <div className="mx-4">
         <div className="responsive mt-1 h-64 w-full rounded-2xl pt-2">
           <Image
-            className="h-64 w-full rounded-2xl object-cover object-center filter"
+            className="h-64 w-full rounded-2xl object-cover object-center"
             src="/p6pb24703805.jpg"
             alt="Gary Fisher Hoo Koo e Koo 1998"
             width={700}
             height={256}
+            style={{ filter: "brightness(0.6)" }}
           />
           <h1 className="px-26 absolute left-[120px] -top-2 text-[196px] text-blue-100 ">
             Jonny&#39;s Bikes
