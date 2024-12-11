@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:css": "tailwindcss build src/globals.css -o build/globals.css && next build",
+    "build:css": "tailwindcss build src/styles/globals.css -o build/globals.css && next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
