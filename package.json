@@ -9,14 +9,12 @@
         "lint": "next lint",
         "test": "jest",
         "test:watch": "jest --watch",
-        "test:e2e": "wdio",
         "prepare": "husky install",
         "check-types": "tsc --pretty --noEmit",
         "check-format": "prettier --check .",
         "format": "prettier --write .",
         "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build",
-        "type-check": "tsc  --noemit",
-        "wdio": "wdio run wdio.conf.ts"
+        "type-check": "tsc  --noemit"
     },
     "lint-staged": {
         "src/**/*.{js,jsx,ts,tsx,json}": [
