@@ -7,7 +7,7 @@ interface AboutProps {
   isLoading: boolean;
 }
 
-const About: FC<AboutProps> = ({ isLoading }) => {
+export const About: FC<AboutProps> = ({ isLoading }) => {
   return (
     <div>
       {isLoading ? (

@@ -1,20 +1,22 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Home from "../src/pages/index";
+import Home, { About } from "@/pages";
 
 describe("Home component", () => {
-  // test('renders the string "Save and see your changes instantly"', () => {
-  //   const { getByText } = render(<Home />);
-  //   expect(getByText("Jonny's Bikes")).toBeInTheDocument();
-  //
-  //   // expect(textElement).toBeInTheDocument();
+  test("About section still loading", () => {
+    render(<About isLoading={true} />);
+    expect(screen.getByText(/Loading.../)).toBeInTheDocument();
+  });
+
+  test("About section loaded", () => {
+    render(<About isLoading={false} />);
+    expect(screen.getByText(/🙏\s*Apologies/)).toBeInTheDocument();
+  });
+
+  // test("Piecharts loaded", () => {
+  //   render(<Home />);
+  //   const canvasElement = screen.getAllByRole("img");
+  //   // const canvasElements = document.querySelectorAll(/canvas/i);
+  //   expect(canvasElements.length).toBeGreaterThan(0);
   // });
-
-  test("it passes", () => {
-    expect(1).toBe(2 - 1);
-  });
-
-  test("it passes 2", () => {
-    expect(1).toBe(2 - 1);
-  });
 });
