@@ -9,6 +9,7 @@
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:e2e": "exec playwright test --spec e2e/**/*.spec.ts",
     "prepare": "husky install",
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
@@ -37,6 +38,7 @@
     "@commitlint/types": "^19.5.0",
     "@eslint/js": "^9.16.0",
     "@jest/globals": "^29.7.0",
+    "@playwright/test": "^1.49.1",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
@@ -46,6 +48,11 @@
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
+    "@wdio/cli": "^9.4.2",
+    "@wdio/local-runner": "^9.4.2",
+    "@wdio/mocha-framework": "^9.4.2",
+    "@wdio/spec-reporter": "^9.4.2",
+    "@wdio/visual-service": "^6.2.5",
     "conventional-changelog-atom": "^5.0.0",
     "eslint": "^8.57.1",
     "eslint-config-next": "15.0.4",
@@ -64,6 +71,7 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5",
-    "typescript-eslint": "^8.18.0"
+    "typescript-eslint": "^8.18.0",
+    "wdio-wait-for": "^3.0.11"
   }
 }
