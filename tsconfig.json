@@ -18,5 +18,5 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "wdio.conf.ts"]
+  "exclude": ["node_modules"]
 }
