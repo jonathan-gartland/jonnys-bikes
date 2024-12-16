@@ -17,14 +17,7 @@ const config: Config = {
     // ...
     '^@/src/(.*)$': '<rootDir>/src/$1',
   },
-  // coveragePathIgnorePatterns: [
-  //   './tests/**/*.spec.ts',
-  //   './node_modules/',
-  //   './.next/',
-  //   './coverage/',
-  //   './public/',
-  // ],
-  // testEnvironment: "node",
+
   testMatch: ['**/__tests__/**/*.[jt]s?(x)'],
 };
 
