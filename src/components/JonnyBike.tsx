@@ -158,7 +158,7 @@ function JonnyBike() {
         </div>
         <div className="mx-8">
           <Image
-            className="h-64 w-full rounded-lg object-cover object-center filter"
+            className="h-64 w-full rounded-lg object-cover object-center"
             src="/jonnys-bikes/image0.jpg"
             alt="GT Grade 2018"
             width={700}
